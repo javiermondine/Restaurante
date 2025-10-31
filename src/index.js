@@ -5,7 +5,7 @@ import { loadHome } from './home.js';
 import { loadMenu } from './menu.js';
 import { loadContact } from './contact.js';
 
-console.log('✅ JavaScript cargado correctamente!');
+console.log('JavaScript cargado correctamente');
 
 // Función para limpiar el contenido y cargar una nueva página
 function loadPage(pageLoader) {
@@ -49,13 +49,11 @@ function initializeNavigation() {
 
 // Cargar la página de inicio cuando se carga el documento
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('🚀 Inicializando Restaurant Page...');
+  console.log('Inicializando Restaurant Page');
   
   // Cargar página de inicio por defecto
   loadPage(loadHome);
   
   // Inicializar navegación
   initializeNavigation();
-  
-  console.log('✨ Aplicación lista!');
 });
